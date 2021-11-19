@@ -1,0 +1,89 @@
+/* fonts */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+/*colors*/
+:root{
+  --primary:#FEF6E8;
+  --secondary:#8F6B2B;
+  --ternary:#938221;
+  --danger:#F8C654;
+  --pure:#C2BFB8;
+  --light:#FBF7EE;
+  --heaven:#9FB276;
+  --footer:#D6AC63;
+}
+
+/*Reset*/
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background: #FEF6E8;
+  -webkit-font-smoothing:antilaised;
+}
+
+.container{
+  width:100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media(min-width:576px){
+  .container{
+    max-width: 540px;
+  }
+}
+@media(min-width:768px){
+  .container{
+    max-width: 720px;
+  }
+}
+@media(min-width:992px){
+  .container{
+    max-width: 960px;
+  }
+}
+@media(min-width:1200px){
+  .container{
+    max-width: 1152px;
+  }
+}
+header.topbar{
+  background:var(--secondary);
+  color: var(--primary);
+  font-family:"Roboto-Regular" ;
+}
+header.topbar .auth > div a{
+  color:var(--primary);
+  text-decoration: none;
+}
+
+header.topbar .container{
+  align-items: center;
+}
+header.topbar .container .auth{
+  display: flex;
+}
+.flex{
+  display: flex;
+}
+.justify-content{
+  justify-content: space-between;
+}
